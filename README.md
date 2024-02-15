@@ -10,4 +10,4 @@ Github- https://md-maheen-billah.github.io/Log-25/
 
  Netlify- https://65cd842fad5f4b5d6915374c--animated-cranachan-ba9e73.netlify.app/
 
-Surge- 
+Surge- https://energetic-mailbox.surge.sh/
