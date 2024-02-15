@@ -4,6 +4,10 @@ Today, I revisited my understanding of fundamental JavaScript and the Document O
 ## Links
 
 Practice Task:
-   Github- https://md-maheen-billah.github.io/Log-25/
-   Netlify- https://65cd842fad5f4b5d6915374c--animated-cranachan-ba9e73.netlify.app/
-   Surge- 
+
+
+Github- https://md-maheen-billah.github.io/Log-25/
+
+ Netlify- https://65cd842fad5f4b5d6915374c--animated-cranachan-ba9e73.netlify.app/
+
+Surge- 
