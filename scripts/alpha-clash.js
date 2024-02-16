@@ -21,7 +21,7 @@ function continueGame() {
   // step-1 generate a random alphabet
   const alphabet = getARandomAlphabet();
   // step-2 set the random alphabet on the screen
-  setInnerTextById("current-alphabet", alphabet);
+  setTextElementValueById("current-alphabet", alphabet);
   //   step -3 set background color on keyboard of the random alphabet
   addBackgroundColorById(alphabet);
 }
@@ -40,7 +40,7 @@ function handleKeyboardKeyUpEvent(event) {
   if (playerPressed === expectedAlphabet) {
     // update score
     // 1. get the current score
-    const currentScore = getTextElementValueById("current-score");
+    const currentScore = getElementTextConvertedToIntegerById("current-score");
     // 2. increase score by 1
     const newScore = currentScore + 1;
     // 3. show the updated score
@@ -51,7 +51,7 @@ function handleKeyboardKeyUpEvent(event) {
   } else {
     // update life
     // 1. get the current life
-    const currentLife = getTextElementValueById("current-life");
+    const currentLife = getElementTextConvertedToIntegerById("current-life");
     // 2. decrease score by 1
     const newLife = currentLife - 1;
     // 3. show the updated life
@@ -66,7 +66,7 @@ function gameOver() {
   hideElementById("play-ground");
   showElementById("score");
   // update final score
-  const score = getTextElementValueById("current-score");
+  const score = getElementTextConvertedToIntegerById("current-score");
   setTextElementValueById("final-score", score);
   // clear the last selected alphabet
   const currentAlphabet = getElementTextById("current-alphabet");

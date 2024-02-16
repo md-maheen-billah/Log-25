@@ -26,25 +26,22 @@ function getARandomAlphabet() {
   const alphabet = alphabets[index];
   return alphabet;
 }
-// show the output on a specified spot as innerText
-function setInnerTextById(elementId, output) {
-  const AreaSpan = document.getElementById(elementId);
-  AreaSpan.innerText = output;
+// get the output of an element as innerText converted to integer
+function getElementTextConvertedToIntegerById(elementId) {
+  const element = document.getElementById(elementId);
+  const text = element.innerText;
+  const integer = parseInt(text);
+  return integer;
 }
-function getTextElementValueById(elementId) {
-  const currentElement = document.getElementById(elementId);
-  const currentElementText = currentElement.innerText;
-  const currentElementValue = parseInt(currentElementText);
-  return currentElementValue;
+// get the output of an element as innerText converted to lowercase
+function getElementTextById(elementId) {
+  const element = document.getElementById(elementId);
+  const text = element.innerText;
+  const textToLowerCase = text.toLocaleLowerCase();
+  return textToLowerCase;
 }
+// set a value on a specified spot as innerText
 function setTextElementValueById(elementId, value) {
   const element = document.getElementById(elementId);
   element.innerText = value;
-}
-
-function getElementTextById(elementId) {
-  const element = document.getElementById(elementId);
-  const textElement = element.innerText;
-  const text = textElement.toLocaleLowerCase();
-  return text;
 }
